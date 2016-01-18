@@ -1,0 +1,19 @@
+11:32:59 - [info]Beginning catalog mirroring process.
+11:33:03 - [info]Updated Gold products in central catalog.
+11:33:03 - [error]Couldn't update price metadata:
+11:33:03 - [error]Line 354: Table 'addwebin_torometal.postmeta' doesn't exist
+11:33:05 - [info]Updated Silver products in central catalog.
+11:33:05 - [error]Couldn't update price metadata:
+11:33:05 - [error]Line 354: Table 'addwebin_torometal.postmeta' doesn't exist
+11:33:05 - [info]Updated Platinum products in central catalog.
+11:33:05 - [error]Couldn't update price metadata:
+11:33:05 - [error]Line 354: Table 'addwebin_torometal.postmeta' doesn't exist
+11:33:05 - [info]Updated Palladium products in central catalog.
+11:33:05 - [error]Couldn't update price metadata:
+11:33:05 - [error]Line 354: Table 'addwebin_torometal.postmeta' doesn't exist
+11:33:05 - [info]Deactivated products.
+11:33:05 - [info]Digital Metals Products Daemon sent email to johnnyharpertesting1@gmail.com
+11:33:05 - [info]Emailed administrators.
+11:33:05 - [info]Finished catalog mirroring process.
+11:33:08 - [info]Beginning retrieval of market hours.
+11:33:08 - [info]Market hours updated.

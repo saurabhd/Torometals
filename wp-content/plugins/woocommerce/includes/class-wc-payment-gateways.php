@@ -86,7 +86,6 @@ class WC_Payment_Gateways {
 				$load_gateways[] = 'WC_Gateway_Simplify_Commerce';
 			}
 		}
-
 		// Filter
 		$load_gateways = apply_filters( 'woocommerce_payment_gateways', $load_gateways );
 
@@ -107,6 +106,7 @@ class WC_Payment_Gateways {
 				$order_end++;
 			}
 		}
+		 
 
 		ksort( $this->payment_gateways );
 	}

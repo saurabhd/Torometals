@@ -57,7 +57,14 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 			wp_nav_menu(
 				array(
 					'theme_location'	=> 'primary',
-					'container_class'	=> 'primary-navigation',
+					'container_class'	=> 'primary-navigation', 
+					'echo' => true,
+					'before' => '',
+					'after' => '',
+					'link_before' => '',
+					'link_after' => '',
+					'depth' => 0,
+					'walker' => new description_walker()
 					)
 			);
 
@@ -65,6 +72,13 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
 				array(
 					'theme_location'	=> 'handheld',
 					'container_class'	=> 'handheld-navigation',
+					'echo' => true,
+					'before' => '',
+					'after' => '',
+					'link_before' => '',
+					'link_after' => '',
+					'depth' => 0,
+					'walker' => new description_walker()
 					)
 			);
 			?>

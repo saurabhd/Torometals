@@ -41,7 +41,6 @@ function get_the_ID() {
  */
 function the_title($before = '', $after = '', $echo = true) {
 	$title = get_the_title();
-
 	if ( strlen($title) == 0 )
 		return;
 
@@ -108,8 +107,8 @@ function the_title_attribute( $args = '' ) {
  * @return string
  */
 function get_the_title( $post = 0 ) {
-	$post = get_post( $post );
 
+	$post = get_post( $post );
 	$title = isset( $post->post_title ) ? $post->post_title : '';
 	$id = isset( $post->ID ) ? $post->ID : 0;
 

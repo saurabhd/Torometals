@@ -62,7 +62,7 @@ function dm_customers_auto_forward_fields ($user) {
 				<td>
 					<input type="radio" name="auto_offer" value="true" <?php checked($user_meta['auto_offer'], 'true'); ?> />Yes &nbsp;&nbsp;
 					<input type="radio" name="auto_offer" value="false" <?php checked($user_meta['auto_offer'], 'false'); ?> />No &nbsp;&nbsp;
-					<input type="radio" name="auto_offer" value="inherit" <?php if (!isset($user_meta['auto_offer']) || $user_meta['auto_offer'] == 'inherit') echo 'checked="checked"'; ?> />Use site settings
+					<input type="radio" name="auto_offer" value="inherit" <?php if (!isset($user_meta['auto_offer']) || $user_meta['auto_offer'] == 'inherit') echo 'checked="checked"'; ?> />Use site settings  &nbsp;&nbsp;<a href="<?php echo get_admin_url(); ?>admin.php?page=wc-settings&tab=digital_metals">Site Settings</a>
 				</td>
 			</tr>	
 			<tr valign="top" class="box first last gray-if-manual-offer">

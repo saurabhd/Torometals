@@ -1,89 +1,12 @@
-06:09:29 - [info]Beginning catalog mirroring process.
-06:09:40 - [info]Updated Gold products in central catalog.
-06:09:40 - [info]Updated Gold dealer site products.
-06:09:45 - [info]Updated Silver products in central catalog.
-06:09:45 - [info]Updated Silver dealer site products.
-06:09:46 - [info]Updated Platinum products in central catalog.
-06:09:46 - [info]Updated Platinum dealer site products.
-06:09:46 - [info]Updated Palladium products in central catalog.
-06:09:46 - [info]Updated Palladium dealer site products.
-06:09:46 - [info]Finished catalog mirroring process.
-10:10:54 - [info]Beginning catalog mirroring process.
-10:11:07 - [info]Updated Gold products in central catalog.
-10:11:07 - [info]Updated Gold dealer site products.
-10:11:13 - [info]Updated Silver products in central catalog.
-10:11:13 - [info]Updated Silver dealer site products.
-10:11:13 - [info]Updated Platinum products in central catalog.
-10:11:13 - [info]Updated Platinum dealer site products.
-10:11:14 - [info]Updated Palladium products in central catalog.
-10:11:14 - [info]Updated Palladium dealer site products.
-10:11:14 - [info]Finished catalog mirroring process.
-19:01:00 - [info]Beginning catalog mirroring process.
-19:01:11 - [info]Updated Gold products in central catalog.
-19:01:12 - [error]Couldn't update price metadata:
-19:01:12 - [error]Line 354: Table 'restrepo_torometals.postmeta' doesn't exist
-19:01:17 - [info]Updated Silver products in central catalog.
-19:01:17 - [error]Couldn't update price metadata:
-19:01:17 - [error]Line 354: Table 'restrepo_torometals.postmeta' doesn't exist
-19:01:18 - [info]Updated Platinum products in central catalog.
-19:01:18 - [error]Couldn't update price metadata:
-19:01:18 - [error]Line 354: Table 'restrepo_torometals.postmeta' doesn't exist
-19:01:19 - [info]Updated Palladium products in central catalog.
-19:01:19 - [error]Couldn't update price metadata:
-19:01:19 - [error]Line 354: Table 'restrepo_torometals.postmeta' doesn't exist
-19:01:19 - [info]Deactivated products.
-19:01:19 - [info]Digital Metals Products Daemon sent email to allan.restrepo@youniversalideas.com
-19:01:19 - [info]Emailed administrators.
-19:01:19 - [info]Finished catalog mirroring process.
-19:01:19 - [info]Beginning retrieval of market hours.
-19:01:19 - [info]Market hours updated.
-19:01:31 - [info]Beginning catalog mirroring process.
-19:01:44 - [info]Updated Gold products in central catalog.
-19:01:44 - [info]Updated Gold dealer site products.
-19:01:49 - [info]Updated Silver products in central catalog.
-19:01:49 - [info]Updated Silver dealer site products.
-19:01:50 - [info]Updated Platinum products in central catalog.
-19:01:50 - [info]Updated Platinum dealer site products.
-19:01:50 - [info]Updated Palladium products in central catalog.
-19:01:50 - [info]Updated Palladium dealer site products.
-19:01:50 - [info]Finished catalog mirroring process.
-20:03:42 - [info]Beginning catalog mirroring process.
-20:03:53 - [info]Updated Gold products in central catalog.
-20:03:53 - [info]Updated Gold dealer site products.
-20:03:58 - [info]Updated Silver products in central catalog.
-20:03:59 - [info]Updated Silver dealer site products.
-20:03:59 - [info]Updated Platinum products in central catalog.
-20:03:59 - [info]Updated Platinum dealer site products.
-20:04:00 - [info]Updated Palladium products in central catalog.
-20:04:00 - [info]Updated Palladium dealer site products.
-20:04:00 - [info]Finished catalog mirroring process.
-20:18:31 - [info]Beginning catalog mirroring process.
-20:18:43 - [info]Updated Gold products in central catalog.
-20:18:43 - [info]Updated Gold dealer site products.
-20:18:47 - [info]Updated Silver products in central catalog.
-20:18:48 - [info]Updated Silver dealer site products.
-20:18:48 - [info]Updated Platinum products in central catalog.
-20:18:48 - [info]Updated Platinum dealer site products.
-20:18:49 - [info]Updated Palladium products in central catalog.
-20:18:49 - [info]Updated Palladium dealer site products.
-20:18:49 - [info]Finished catalog mirroring process.
-20:33:05 - [info]Beginning catalog mirroring process.
-20:33:15 - [info]Updated Gold products in central catalog.
-20:33:15 - [info]Updated Gold dealer site products.
-20:33:20 - [info]Updated Silver products in central catalog.
-20:33:20 - [info]Updated Silver dealer site products.
-20:33:20 - [info]Updated Platinum products in central catalog.
-20:33:20 - [info]Updated Platinum dealer site products.
-20:33:21 - [info]Updated Palladium products in central catalog.
-20:33:21 - [info]Updated Palladium dealer site products.
-20:33:21 - [info]Finished catalog mirroring process.
-20:46:16 - [info]Beginning catalog mirroring process.
-20:46:27 - [info]Updated Gold products in central catalog.
-20:46:27 - [info]Updated Gold dealer site products.
-20:46:32 - [info]Updated Silver products in central catalog.
-20:46:32 - [info]Updated Silver dealer site products.
-20:46:33 - [info]Updated Platinum products in central catalog.
-20:46:33 - [info]Updated Platinum dealer site products.
-20:46:33 - [info]Updated Palladium products in central catalog.
-20:46:33 - [info]Updated Palladium dealer site products.
-20:46:33 - [info]Finished catalog mirroring process.
+06:09:35 - [info]Beginning catalog mirroring process.
+06:09:46 - [info]Beginning retrieval of market hours.
+06:09:46 - [info]Market hours updated.
+06:09:47 - [info]Updated Gold products in central catalog.
+06:09:47 - [info]Updated Gold dealer site products.
+06:09:53 - [info]Updated Silver products in central catalog.
+06:09:53 - [info]Updated Silver dealer site products.
+06:09:53 - [info]Updated Platinum products in central catalog.
+06:09:53 - [info]Updated Platinum dealer site products.
+06:09:53 - [info]Updated Palladium products in central catalog.
+06:09:53 - [info]Updated Palladium dealer site products.
+06:09:53 - [info]Finished catalog mirroring process.

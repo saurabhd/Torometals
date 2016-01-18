@@ -33,6 +33,8 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script type="text/javascript" src="https://stage-connect.fiztrade.com/Scripts/FizCommerce/eCommerce.js"></script>
+<script type="text/javascript" src="https://stage-connect.fiztrade.com/Scripts/FizCharts.js"></script>
+<!-- <script type="text/javascript" src="https://stage-connect.fiztrade.com/Scripts/FizCommerce/eCommerce-1.0.6.js"> --></script>
 </body>
 </html>

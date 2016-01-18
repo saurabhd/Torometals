@@ -4,7 +4,12 @@
 function dm_customers_checkout_fields ($checkout) {
 	$tech_options = get_option('imag_mall_options_tech');
 	$req_tax_id = isset($tech_options['req_tax_id']) ? $tech_options['req_tax_id'] : false;
+	if ($req_tax_id == 'no')
+		$req_tax_id = false;
 	$req_dl_num = isset($tech_options['req_dl_num']) ? $tech_options['req_dl_num'] : false;
+	if ($req_dl_num == 'no')
+		$req_dl_num = false;
+	
 	
 	if ($req_tax_id) {
 		$taxid = is_user_logged_in() ? get_user_meta(get_current_user_id(), 'taxid', true) : '';
@@ -33,7 +38,11 @@ add_action('woocommerce_checkout_after_customer_details', 'dm_customers_checkout
 function dm_customers_checkout_field_process () {
 	$tech_options = get_option('imag_mall_options_tech');
 	$req_tax_id = isset($tech_options['req_tax_id']) ? $tech_options['req_tax_id'] : false;
+	if ($req_tax_id == 'no')
+		$req_tax_id = false;
 	$req_dl_num = isset($tech_options['req_dl_num']) ? $tech_options['req_dl_num'] : false;
+	if ($req_dl_num == 'no')
+		$req_dl_num = false;
 	$valid = true;
 	
 	if ($req_tax_id && !$_POST['taxid'])

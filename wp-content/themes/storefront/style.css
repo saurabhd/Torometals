@@ -1478,3 +1478,65 @@ fieldset legend { font-weight: 700; }
   display: none; }
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
 .infinity-end.neverending .site-footer { display: block; }
+
+
+.page-template-template-fiztrade-on-sale .site-content .content-area,
+.page-template-template-fiztrade-gold .site-content .content-area,
+.page-template-template-fiztrade-silver .site-content .content-area,
+.page-template-template-fiztrade-platinum .site-content .content-area,
+.page-template-template-fiztrade-palladium .site-content .content-area {
+	width: 100%;
+	margin-right: 0;
+}
+.site-header .col-full .main_menu_h #site-navigation {
+	width: auto;
+}
+
+.login-register-cart {
+	float: right;
+	width: auto;
+	margin: 0 0 -33px 0;
+}
+.login-register-div {
+	float: right;
+	height: 26px;
+	margin: 8px 10px 0 0;
+	max-width: 150px;
+	position: relative;
+	right: 0;
+	top: 0;
+	width: auto;
+	z-index: 999;
+}
+.my-cart-div {
+	float: right;
+	height: 26px;
+	margin: 8px 26px 0 0;
+	max-width: 140px;
+	position: relative;
+	right: 0;
+	top: 0;
+	width: auto;
+	z-index: 999;
+}
+.navSideBar { display: none;}
+.popular-product .row-fluid > .span-fixed-sidebar { margin-left: 0; }
+
+.popular-products .span-fixed-sidebar .familyContainer {
+	width: 32.6666%;
+	margin: 0 1% 10px 0;
+}
+.popular-products .span-fixed-sidebar .familyContainer:nth-of-type(3n) {
+	margin-right: 0;
+}
+.popular-products .container-fluid > .row-fluid.row {
+	margin: 0;
+}
+
+
+
+
+
+
+
+

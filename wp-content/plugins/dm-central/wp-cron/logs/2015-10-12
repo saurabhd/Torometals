@@ -1,19 +1,12 @@
-07:17:17 - [info]Beginning catalog mirroring process.
-07:17:34 - [info]Updated Gold products in central catalog.
-07:17:34 - [error]Couldn't update price metadata:
-07:17:34 - [error]Line 354: Table 'restrepo_torometals.postmeta' doesn't exist
-07:17:43 - [info]Updated Silver products in central catalog.
-07:17:43 - [error]Couldn't update price metadata:
-07:17:43 - [error]Line 354: Table 'restrepo_torometals.postmeta' doesn't exist
-07:17:44 - [info]Updated Platinum products in central catalog.
-07:17:44 - [error]Couldn't update price metadata:
-07:17:44 - [error]Line 354: Table 'restrepo_torometals.postmeta' doesn't exist
-07:17:44 - [info]Updated Palladium products in central catalog.
-07:17:44 - [error]Couldn't update price metadata:
-07:17:44 - [error]Line 354: Table 'restrepo_torometals.postmeta' doesn't exist
-07:17:44 - [info]Deactivated products.
-07:17:44 - [info]Digital Metals Products Daemon sent email to allan.restrepo@youniversalideas.com
-07:17:44 - [info]Emailed administrators.
-07:17:44 - [info]Finished catalog mirroring process.
-07:17:49 - [info]Beginning retrieval of market hours.
-07:17:50 - [info]Market hours updated.
+11:34:32 - [info]Beginning catalog mirroring process.
+11:34:36 - [info]Updated Gold products in central catalog.
+11:34:36 - [info]Updated Gold dealer site products.
+11:34:37 - [info]Updated Silver products in central catalog.
+11:34:37 - [info]Updated Silver dealer site products.
+11:34:38 - [info]Updated Platinum products in central catalog.
+11:34:38 - [info]Updated Platinum dealer site products.
+11:34:38 - [info]Updated Palladium products in central catalog.
+11:34:38 - [info]Updated Palladium dealer site products.
+11:34:38 - [info]Finished catalog mirroring process.
+11:34:38 - [info]Beginning retrieval of market hours.
+11:34:38 - [info]Market hours updated.

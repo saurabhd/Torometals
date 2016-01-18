@@ -83,7 +83,7 @@ add_action( 'storefront_single_post_after',	'storefront_display_comments',	10 );
  */
 add_action( 'storefront_page', 			'storefront_page_header',		10 );
 add_action( 'storefront_page', 			'storefront_page_content',		20 );
-add_action( 'storefront_page_after', 	'storefront_display_comments',	10 );
+//add_action( 'storefront_page_after', 	'storefront_display_comments',	10 );
 
 /**
  * Extras

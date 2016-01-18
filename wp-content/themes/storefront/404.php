@@ -11,41 +11,23 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'storefront' ); ?></h1>
-				</header><!-- .page-header -->
-
 				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'storefront' ); ?></p>
-
-					<?php get_search_form(); ?>
-
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-					<?php if ( storefront_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php _e( 'Most Used Categories', 'storefront' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
-
-					<?php
-						$archive_content = '<p>' . __( 'Try looking in the monthly archives.', 'storefront' ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-
+					<div class="errorcontainer">
+						<div class="erroricon">
+							<span class="error-icon">
+								<img alt="" src="http://newco2.youniversal.mobi/wp-content/uploads/2015/12/1.png">
+								<span class="error-txt">Looks like the page you’re looking for was moved.</span>
+							</span>
+						</div>
+						<div class="errorcontent"><div class="hd-typ2">Please try one of the following options:</div> 								<ul>
+								<li>Make sure you typed the correct URL or followed a valid link.</li> 									
+								<li>Try to access the page directly from the <a title="Home" class="Home" 
+								href="http://newco2.youniversal.mobi/">home</a> page.</li>
+								<li>Please contact <a title="Contact us" href="http://newco2.youniversal.mobi/contact-us/">webmaster</a> 
+								if you think there are some errors in processing the web page.</li>
+							</ul>
+						</div>
+					</div>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

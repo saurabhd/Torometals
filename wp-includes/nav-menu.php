@@ -462,7 +462,8 @@ function wp_update_nav_menu_item( $menu_id = 0, $menu_item_db_id = 0, $menu_item
  * @param array $args Optional. Array of arguments passed on to {@see get_terms()}.
  *                    Default empty array.
  * @return array Menu objects.
- */
+*/
+
 function wp_get_nav_menus( $args = array() ) {
 	$defaults = array( 'hide_empty' => false, 'orderby' => 'name' );
 	$args = wp_parse_args( $args, $defaults );
