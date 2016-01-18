@@ -1,0 +1,445 @@
+05:21:50 - [info]Beginning catalog mirroring process.
+05:21:55 - [info]Updated Gold products in central catalog.
+05:21:55 - [error]Couldn't update price metadata:
+05:21:55 - [error]Line 354: Table 'addwebin_torometal.postmeta' doesn't exist
+05:21:57 - [info]Updated Silver products in central catalog.
+05:21:57 - [error]Couldn't update price metadata:
+05:21:57 - [error]Line 354: Table 'addwebin_torometal.postmeta' doesn't exist
+05:21:57 - [info]Updated Platinum products in central catalog.
+05:21:57 - [error]Couldn't update price metadata:
+05:21:57 - [error]Line 354: Table 'addwebin_torometal.postmeta' doesn't exist
+05:21:57 - [info]Updated Palladium products in central catalog.
+05:21:57 - [error]Couldn't update price metadata:
+05:21:57 - [error]Line 354: Table 'addwebin_torometal.postmeta' doesn't exist
+05:21:57 - [info]Deactivated products.
+05:21:58 - [error]Digital Metals Products Daemon failed sending email to 
+05:21:58 - [info]Emailed administrators.
+05:21:58 - [info]Finished catalog mirroring process.
+05:34:15 - [info]Beginning catalog mirroring process.
+05:34:16 - [info]Beginning catalog mirroring process.
+05:34:19 - [info]Updated Gold products in central catalog.
+05:34:19 - [info]Updated Gold dealer site products.
+05:34:19 - [info]Updated Gold products in central catalog.
+05:34:20 - [info]Updated Gold dealer site products.
+05:34:21 - [info]Updated Silver products in central catalog.
+05:34:21 - [info]Updated Silver dealer site products.
+05:34:21 - [info]Updated Platinum products in central catalog.
+05:34:21 - [info]Updated Platinum dealer site products.
+05:34:22 - [info]Updated Silver products in central catalog.
+05:34:22 - [info]Updated Silver dealer site products.
+05:34:22 - [info]Updated Palladium products in central catalog.
+05:34:22 - [info]Updated Palladium dealer site products.
+05:34:22 - [info]Finished catalog mirroring process.
+05:34:22 - [info]Updated Platinum products in central catalog.
+05:34:22 - [info]Updated Platinum dealer site products.
+05:34:22 - [info]Updated Palladium products in central catalog.
+05:34:22 - [info]Updated Palladium dealer site products.
+05:34:22 - [info]Finished catalog mirroring process.
+05:46:21 - [info]Beginning catalog mirroring process.
+05:46:25 - [info]Updated Gold products in central catalog.
+05:46:25 - [info]Updated Gold dealer site products.
+05:46:26 - [info]Updated Silver products in central catalog.
+05:46:26 - [info]Updated Silver dealer site products.
+05:46:27 - [info]Updated Platinum products in central catalog.
+05:46:27 - [info]Updated Platinum dealer site products.
+05:46:27 - [info]Updated Palladium products in central catalog.
+05:46:27 - [info]Updated Palladium dealer site products.
+05:46:27 - [info]Finished catalog mirroring process.
+06:01:45 - [info]Beginning catalog mirroring process.
+06:01:48 - [info]Updated Gold products in central catalog.
+06:01:48 - [info]Updated Gold dealer site products.
+06:01:50 - [info]Updated Silver products in central catalog.
+06:01:50 - [info]Updated Silver dealer site products.
+06:01:50 - [info]Updated Platinum products in central catalog.
+06:01:50 - [info]Updated Platinum dealer site products.
+06:01:51 - [info]Updated Palladium products in central catalog.
+06:01:51 - [info]Updated Palladium dealer site products.
+06:01:51 - [info]Finished catalog mirroring process.
+06:16:27 - [info]Beginning catalog mirroring process.
+06:16:31 - [info]Updated Gold products in central catalog.
+06:16:31 - [info]Updated Gold dealer site products.
+06:16:33 - [info]Updated Silver products in central catalog.
+06:16:33 - [info]Updated Silver dealer site products.
+06:16:33 - [info]Updated Platinum products in central catalog.
+06:16:33 - [info]Updated Platinum dealer site products.
+06:16:33 - [info]Updated Palladium products in central catalog.
+06:16:33 - [info]Updated Palladium dealer site products.
+06:16:33 - [info]Finished catalog mirroring process.
+06:31:07 - [info]Beginning catalog mirroring process.
+06:31:07 - [info]Beginning catalog mirroring process.
+06:31:11 - [info]Updated Gold products in central catalog.
+06:31:11 - [info]Updated Gold dealer site products.
+06:31:11 - [info]Updated Gold products in central catalog.
+06:31:11 - [info]Updated Gold dealer site products.
+06:31:13 - [info]Updated Silver products in central catalog.
+06:31:13 - [info]Updated Silver dealer site products.
+06:31:13 - [info]Updated Silver products in central catalog.
+06:31:13 - [info]Updated Silver dealer site products.
+06:31:13 - [info]Updated Platinum products in central catalog.
+06:31:13 - [info]Updated Platinum dealer site products.
+06:31:13 - [info]Updated Platinum products in central catalog.
+06:31:13 - [info]Updated Platinum dealer site products.
+06:31:13 - [info]Updated Palladium products in central catalog.
+06:31:13 - [info]Updated Palladium dealer site products.
+06:31:13 - [info]Finished catalog mirroring process.
+06:31:14 - [info]Updated Palladium products in central catalog.
+06:31:14 - [info]Updated Palladium dealer site products.
+06:31:14 - [info]Finished catalog mirroring process.
+06:46:27 - [info]Beginning catalog mirroring process.
+06:46:31 - [info]Updated Gold products in central catalog.
+06:46:31 - [info]Updated Gold dealer site products.
+06:46:33 - [info]Updated Silver products in central catalog.
+06:46:33 - [info]Updated Silver dealer site products.
+06:46:34 - [info]Updated Platinum products in central catalog.
+06:46:34 - [info]Updated Platinum dealer site products.
+06:46:34 - [info]Updated Palladium products in central catalog.
+06:46:34 - [info]Updated Palladium dealer site products.
+06:46:34 - [info]Finished catalog mirroring process.
+07:01:06 - [info]Beginning catalog mirroring process.
+07:01:10 - [info]Updated Gold products in central catalog.
+07:01:10 - [info]Updated Gold dealer site products.
+07:01:12 - [info]Updated Silver products in central catalog.
+07:01:12 - [info]Updated Silver dealer site products.
+07:01:12 - [info]Updated Platinum products in central catalog.
+07:01:12 - [info]Updated Platinum dealer site products.
+07:01:12 - [info]Updated Palladium products in central catalog.
+07:01:12 - [info]Updated Palladium dealer site products.
+07:01:12 - [info]Finished catalog mirroring process.
+07:16:14 - [info]Beginning catalog mirroring process.
+07:16:15 - [info]Beginning catalog mirroring process.
+07:16:18 - [info]Updated Gold products in central catalog.
+07:16:18 - [info]Updated Gold dealer site products.
+07:16:18 - [info]Updated Gold products in central catalog.
+07:16:18 - [info]Updated Gold dealer site products.
+07:16:20 - [info]Updated Silver products in central catalog.
+07:16:20 - [info]Updated Silver dealer site products.
+07:16:20 - [info]Updated Platinum products in central catalog.
+07:16:20 - [info]Updated Platinum dealer site products.
+07:16:20 - [info]Updated Palladium products in central catalog.
+07:16:20 - [info]Updated Palladium dealer site products.
+07:16:20 - [info]Finished catalog mirroring process.
+07:16:20 - [info]Updated Silver products in central catalog.
+07:16:20 - [info]Updated Silver dealer site products.
+07:16:21 - [info]Updated Platinum products in central catalog.
+07:16:21 - [info]Updated Platinum dealer site products.
+07:16:21 - [info]Updated Palladium products in central catalog.
+07:16:21 - [info]Updated Palladium dealer site products.
+07:16:21 - [info]Finished catalog mirroring process.
+07:31:22 - [info]Beginning catalog mirroring process.
+07:31:23 - [info]Beginning catalog mirroring process.
+07:31:27 - [info]Updated Gold products in central catalog.
+07:31:27 - [info]Updated Gold dealer site products.
+07:31:27 - [info]Updated Gold products in central catalog.
+07:31:27 - [info]Updated Gold dealer site products.
+07:31:29 - [info]Updated Silver products in central catalog.
+07:31:29 - [info]Updated Silver dealer site products.
+07:31:29 - [info]Updated Platinum products in central catalog.
+07:31:29 - [info]Updated Platinum dealer site products.
+07:31:29 - [info]Updated Silver products in central catalog.
+07:31:29 - [info]Updated Silver dealer site products.
+07:31:30 - [info]Updated Palladium products in central catalog.
+07:31:30 - [info]Updated Palladium dealer site products.
+07:31:30 - [info]Finished catalog mirroring process.
+07:31:30 - [info]Updated Platinum products in central catalog.
+07:31:30 - [info]Updated Platinum dealer site products.
+07:31:30 - [info]Updated Palladium products in central catalog.
+07:31:30 - [info]Updated Palladium dealer site products.
+07:31:30 - [info]Finished catalog mirroring process.
+07:47:23 - [info]Beginning catalog mirroring process.
+07:47:27 - [info]Updated Gold products in central catalog.
+07:47:27 - [info]Updated Gold dealer site products.
+07:47:30 - [info]Updated Silver products in central catalog.
+07:47:30 - [info]Updated Silver dealer site products.
+07:47:30 - [info]Updated Platinum products in central catalog.
+07:47:30 - [info]Updated Platinum dealer site products.
+07:47:30 - [info]Updated Palladium products in central catalog.
+07:47:30 - [info]Updated Palladium dealer site products.
+07:47:30 - [info]Finished catalog mirroring process.
+08:01:23 - [info]Beginning catalog mirroring process.
+08:01:26 - [info]Updated Gold products in central catalog.
+08:01:26 - [info]Updated Gold dealer site products.
+08:01:28 - [info]Updated Silver products in central catalog.
+08:01:28 - [info]Updated Silver dealer site products.
+08:01:28 - [info]Updated Platinum products in central catalog.
+08:01:28 - [info]Updated Platinum dealer site products.
+08:01:28 - [info]Updated Palladium products in central catalog.
+08:01:28 - [info]Updated Palladium dealer site products.
+08:01:28 - [info]Finished catalog mirroring process.
+08:16:08 - [info]Beginning catalog mirroring process.
+08:16:12 - [info]Updated Gold products in central catalog.
+08:16:12 - [info]Updated Gold dealer site products.
+08:16:14 - [info]Updated Silver products in central catalog.
+08:16:14 - [info]Updated Silver dealer site products.
+08:16:15 - [info]Updated Platinum products in central catalog.
+08:16:15 - [info]Updated Platinum dealer site products.
+08:16:15 - [info]Updated Palladium products in central catalog.
+08:16:15 - [info]Updated Palladium dealer site products.
+08:16:15 - [info]Finished catalog mirroring process.
+08:31:24 - [info]Beginning catalog mirroring process.
+08:31:31 - [info]Updated Gold products in central catalog.
+08:31:31 - [info]Updated Gold dealer site products.
+08:31:35 - [info]Updated Silver products in central catalog.
+08:31:35 - [info]Updated Silver dealer site products.
+08:31:35 - [info]Updated Platinum products in central catalog.
+08:31:35 - [info]Updated Platinum dealer site products.
+08:31:36 - [info]Updated Palladium products in central catalog.
+08:31:36 - [info]Updated Palladium dealer site products.
+08:31:36 - [info]Finished catalog mirroring process.
+08:47:23 - [info]Beginning catalog mirroring process.
+08:47:27 - [info]Updated Gold products in central catalog.
+08:47:27 - [info]Updated Gold dealer site products.
+08:47:29 - [info]Updated Silver products in central catalog.
+08:47:29 - [info]Updated Silver dealer site products.
+08:47:29 - [info]Updated Platinum products in central catalog.
+08:47:29 - [info]Updated Platinum dealer site products.
+08:47:29 - [info]Updated Palladium products in central catalog.
+08:47:29 - [info]Updated Palladium dealer site products.
+08:47:29 - [info]Finished catalog mirroring process.
+09:01:22 - [info]Beginning catalog mirroring process.
+09:01:26 - [info]Updated Gold products in central catalog.
+09:01:26 - [info]Updated Gold dealer site products.
+09:01:28 - [info]Updated Silver products in central catalog.
+09:01:28 - [info]Updated Silver dealer site products.
+09:01:28 - [info]Updated Platinum products in central catalog.
+09:01:28 - [info]Updated Platinum dealer site products.
+09:01:28 - [info]Updated Palladium products in central catalog.
+09:01:28 - [info]Updated Palladium dealer site products.
+09:01:28 - [info]Finished catalog mirroring process.
+09:17:23 - [info]Beginning catalog mirroring process.
+09:17:27 - [info]Updated Gold products in central catalog.
+09:17:27 - [info]Updated Gold dealer site products.
+09:17:29 - [info]Updated Silver products in central catalog.
+09:17:29 - [info]Updated Silver dealer site products.
+09:17:29 - [info]Updated Platinum products in central catalog.
+09:17:29 - [info]Updated Platinum dealer site products.
+09:17:29 - [info]Updated Palladium products in central catalog.
+09:17:29 - [info]Updated Palladium dealer site products.
+09:17:29 - [info]Finished catalog mirroring process.
+09:31:23 - [info]Beginning catalog mirroring process.
+09:31:26 - [info]Updated Gold products in central catalog.
+09:31:26 - [info]Updated Gold dealer site products.
+09:31:28 - [info]Updated Silver products in central catalog.
+09:31:28 - [info]Updated Silver dealer site products.
+09:31:28 - [info]Updated Platinum products in central catalog.
+09:31:28 - [info]Updated Platinum dealer site products.
+09:31:28 - [info]Updated Palladium products in central catalog.
+09:31:28 - [info]Updated Palladium dealer site products.
+09:31:28 - [info]Finished catalog mirroring process.
+09:47:23 - [info]Beginning catalog mirroring process.
+09:47:27 - [info]Updated Gold products in central catalog.
+09:47:27 - [info]Updated Gold dealer site products.
+09:47:29 - [info]Updated Silver products in central catalog.
+09:47:29 - [info]Updated Silver dealer site products.
+09:47:29 - [info]Updated Platinum products in central catalog.
+09:47:29 - [info]Updated Platinum dealer site products.
+09:47:29 - [info]Updated Palladium products in central catalog.
+09:47:29 - [info]Updated Palladium dealer site products.
+09:47:29 - [info]Finished catalog mirroring process.
+10:01:27 - [info]Beginning catalog mirroring process.
+10:01:32 - [info]Updated Gold products in central catalog.
+10:01:32 - [info]Updated Gold dealer site products.
+10:01:34 - [info]Updated Silver products in central catalog.
+10:01:35 - [info]Updated Silver dealer site products.
+10:01:35 - [info]Updated Platinum products in central catalog.
+10:01:35 - [info]Updated Platinum dealer site products.
+10:01:35 - [info]Updated Palladium products in central catalog.
+10:01:35 - [info]Updated Palladium dealer site products.
+10:01:35 - [info]Finished catalog mirroring process.
+10:17:27 - [info]Beginning catalog mirroring process.
+10:17:31 - [info]Updated Gold products in central catalog.
+10:17:31 - [info]Updated Gold dealer site products.
+10:17:33 - [info]Updated Silver products in central catalog.
+10:17:33 - [info]Updated Silver dealer site products.
+10:17:33 - [info]Updated Platinum products in central catalog.
+10:17:33 - [info]Updated Platinum dealer site products.
+10:17:33 - [info]Updated Palladium products in central catalog.
+10:17:33 - [info]Updated Palladium dealer site products.
+10:17:33 - [info]Finished catalog mirroring process.
+10:31:47 - [info]Beginning catalog mirroring process.
+10:32:48 - [info]Updated Gold products in central catalog.
+10:32:48 - [info]Updated Gold dealer site products.
+10:33:03 - [info]Updated Silver products in central catalog.
+10:33:03 - [info]Updated Silver dealer site products.
+10:33:05 - [info]Updated Platinum products in central catalog.
+10:33:05 - [info]Updated Platinum dealer site products.
+10:33:06 - [info]Updated Palladium products in central catalog.
+10:33:06 - [info]Updated Palladium dealer site products.
+10:33:06 - [info]Finished catalog mirroring process.
+10:47:29 - [info]Beginning catalog mirroring process.
+10:47:32 - [info]Updated Gold products in central catalog.
+10:47:32 - [info]Updated Gold dealer site products.
+10:47:34 - [info]Updated Silver products in central catalog.
+10:47:34 - [info]Updated Silver dealer site products.
+10:47:35 - [info]Updated Platinum products in central catalog.
+10:47:35 - [info]Updated Platinum dealer site products.
+10:47:35 - [info]Updated Palladium products in central catalog.
+10:47:35 - [info]Updated Palladium dealer site products.
+10:47:35 - [info]Finished catalog mirroring process.
+11:02:26 - [info]Beginning catalog mirroring process.
+11:04:03 - [info]Updated Gold products in central catalog.
+11:04:06 - [info]Updated Gold dealer site products.
+11:04:16 - [error]Failed checking for deleted Silver products in database:
+11:04:18 - [error]MySQL server has gone away
+11:04:18 - [info]Updated Silver products in central catalog.
+11:04:18 - [info]Updated Silver dealer site products.
+11:04:18 - [error]Failed checking for deleted Platinum products in database:
+11:04:25 - [error]MySQL server has gone away
+11:04:26 - [info]Updated Platinum products in central catalog.
+11:04:26 - [info]Updated Platinum dealer site products.
+11:04:26 - [error]Failed checking for deleted Palladium products in database:
+11:04:26 - [error]MySQL server has gone away
+11:04:26 - [info]Updated Palladium products in central catalog.
+11:04:26 - [info]Updated Palladium dealer site products.
+11:04:53 - [info]Finished catalog mirroring process.
+11:16:24 - [info]Beginning catalog mirroring process.
+11:16:27 - [info]Updated Gold products in central catalog.
+11:16:27 - [info]Updated Gold dealer site products.
+11:16:29 - [info]Updated Silver products in central catalog.
+11:16:29 - [info]Updated Silver dealer site products.
+11:16:29 - [info]Updated Platinum products in central catalog.
+11:16:29 - [info]Updated Platinum dealer site products.
+11:16:29 - [info]Updated Palladium products in central catalog.
+11:16:29 - [info]Updated Palladium dealer site products.
+11:16:29 - [info]Finished catalog mirroring process.
+11:31:10 - [info]Beginning catalog mirroring process.
+11:31:13 - [info]Updated Gold products in central catalog.
+11:31:13 - [info]Updated Gold dealer site products.
+11:31:15 - [info]Updated Silver products in central catalog.
+11:31:15 - [info]Updated Silver dealer site products.
+11:31:15 - [info]Updated Platinum products in central catalog.
+11:31:15 - [info]Updated Platinum dealer site products.
+11:31:15 - [info]Updated Palladium products in central catalog.
+11:31:15 - [info]Updated Palladium dealer site products.
+11:31:15 - [info]Finished catalog mirroring process.
+11:46:17 - [info]Beginning catalog mirroring process.
+11:46:21 - [info]Updated Gold products in central catalog.
+11:46:21 - [info]Updated Gold dealer site products.
+11:46:23 - [info]Updated Silver products in central catalog.
+11:46:23 - [info]Updated Silver dealer site products.
+11:46:23 - [info]Updated Platinum products in central catalog.
+11:46:23 - [info]Updated Platinum dealer site products.
+11:46:23 - [info]Updated Palladium products in central catalog.
+11:46:23 - [info]Updated Palladium dealer site products.
+11:46:23 - [info]Finished catalog mirroring process.
+12:01:10 - [info]Beginning catalog mirroring process.
+12:01:13 - [info]Updated Gold products in central catalog.
+12:01:13 - [info]Updated Gold dealer site products.
+12:01:15 - [info]Updated Silver products in central catalog.
+12:01:15 - [info]Updated Silver dealer site products.
+12:01:15 - [info]Updated Platinum products in central catalog.
+12:01:15 - [info]Updated Platinum dealer site products.
+12:01:15 - [info]Updated Palladium products in central catalog.
+12:01:15 - [info]Updated Palladium dealer site products.
+12:01:15 - [info]Finished catalog mirroring process.
+12:17:20 - [info]Beginning catalog mirroring process.
+12:17:24 - [info]Updated Gold products in central catalog.
+12:17:24 - [info]Updated Gold dealer site products.
+12:17:25 - [info]Updated Silver products in central catalog.
+12:17:25 - [info]Updated Silver dealer site products.
+12:17:26 - [info]Updated Platinum products in central catalog.
+12:17:26 - [info]Updated Platinum dealer site products.
+12:17:26 - [info]Updated Palladium products in central catalog.
+12:17:26 - [info]Updated Palladium dealer site products.
+12:17:26 - [info]Finished catalog mirroring process.
+12:31:52 - [info]Beginning catalog mirroring process.
+12:32:03 - [info]Updated Gold products in central catalog.
+12:32:03 - [info]Updated Gold dealer site products.
+12:32:07 - [info]Updated Silver products in central catalog.
+12:32:07 - [info]Updated Silver dealer site products.
+12:32:08 - [info]Updated Platinum products in central catalog.
+12:32:08 - [info]Updated Platinum dealer site products.
+12:32:08 - [info]Updated Palladium products in central catalog.
+12:32:08 - [info]Updated Palladium dealer site products.
+12:32:08 - [info]Finished catalog mirroring process.
+12:47:35 - [info]Beginning catalog mirroring process.
+12:47:39 - [info]Updated Gold products in central catalog.
+12:47:39 - [info]Updated Gold dealer site products.
+12:47:41 - [info]Updated Silver products in central catalog.
+12:47:41 - [info]Updated Silver dealer site products.
+12:47:42 - [info]Updated Platinum products in central catalog.
+12:47:42 - [info]Updated Platinum dealer site products.
+12:47:42 - [info]Updated Palladium products in central catalog.
+12:47:42 - [info]Updated Palladium dealer site products.
+12:47:42 - [info]Finished catalog mirroring process.
+13:01:55 - [info]Beginning catalog mirroring process.
+13:01:59 - [info]Updated Gold products in central catalog.
+13:01:59 - [info]Updated Gold dealer site products.
+13:02:01 - [info]Updated Silver products in central catalog.
+13:02:01 - [info]Updated Silver dealer site products.
+13:02:01 - [info]Updated Platinum products in central catalog.
+13:02:01 - [info]Updated Platinum dealer site products.
+13:02:01 - [info]Updated Palladium products in central catalog.
+13:02:01 - [info]Updated Palladium dealer site products.
+13:02:01 - [info]Finished catalog mirroring process.
+13:20:29 - [info]Beginning catalog mirroring process.
+13:20:33 - [info]Updated Gold products in central catalog.
+13:20:34 - [info]Updated Gold dealer site products.
+13:20:35 - [info]Updated Silver products in central catalog.
+13:20:35 - [info]Updated Silver dealer site products.
+13:20:36 - [info]Updated Platinum products in central catalog.
+13:20:36 - [info]Updated Platinum dealer site products.
+13:20:36 - [info]Updated Palladium products in central catalog.
+13:20:36 - [info]Updated Palladium dealer site products.
+13:20:36 - [info]Finished catalog mirroring process.
+13:35:29 - [info]Beginning retrieval of market hours.
+13:35:29 - [info]Market hours updated.
+13:35:29 - [info]Beginning catalog mirroring process.
+13:35:33 - [info]Updated Gold products in central catalog.
+13:35:33 - [info]Updated Gold dealer site products.
+13:35:34 - [info]Updated Silver products in central catalog.
+13:35:34 - [info]Updated Silver dealer site products.
+13:35:35 - [info]Updated Platinum products in central catalog.
+13:35:35 - [info]Updated Platinum dealer site products.
+13:35:35 - [info]Updated Palladium products in central catalog.
+13:35:35 - [info]Updated Palladium dealer site products.
+13:35:35 - [info]Finished catalog mirroring process.
+14:00:16 - [info]Beginning catalog mirroring process.
+14:00:47 - [info]Updated Gold products in central catalog.
+14:00:47 - [info]Updated Gold dealer site products.
+14:00:53 - [info]Updated Silver products in central catalog.
+14:00:53 - [info]Updated Silver dealer site products.
+14:00:54 - [info]Updated Platinum products in central catalog.
+14:00:54 - [info]Updated Platinum dealer site products.
+14:00:54 - [info]Updated Palladium products in central catalog.
+14:00:54 - [info]Updated Palladium dealer site products.
+14:00:54 - [info]Finished catalog mirroring process.
+14:11:03 - [info]Beginning catalog mirroring process.
+14:11:07 - [info]Updated Gold products in central catalog.
+14:11:07 - [info]Updated Gold dealer site products.
+14:11:08 - [info]Updated Silver products in central catalog.
+14:11:08 - [info]Updated Silver dealer site products.
+14:11:08 - [info]Updated Platinum products in central catalog.
+14:11:08 - [info]Updated Platinum dealer site products.
+14:11:09 - [info]Updated Palladium products in central catalog.
+14:11:09 - [info]Updated Palladium dealer site products.
+14:11:09 - [info]Finished catalog mirroring process.
+14:16:43 - [info]Beginning catalog mirroring process.
+14:16:43 - [info]Beginning catalog mirroring process.
+14:16:46 - [info]Updated Gold products in central catalog.
+14:16:46 - [info]Updated Gold dealer site products.
+14:16:47 - [info]Updated Gold products in central catalog.
+14:16:47 - [info]Updated Gold dealer site products.
+14:16:48 - [info]Updated Silver products in central catalog.
+14:16:48 - [info]Updated Silver dealer site products.
+14:16:48 - [info]Updated Platinum products in central catalog.
+14:16:48 - [info]Updated Platinum dealer site products.
+14:16:48 - [info]Updated Palladium products in central catalog.
+14:16:48 - [info]Updated Palladium dealer site products.
+14:16:48 - [info]Finished catalog mirroring process.
+14:16:48 - [info]Updated Silver products in central catalog.
+14:16:48 - [info]Updated Silver dealer site products.
+14:16:49 - [info]Updated Platinum products in central catalog.
+14:16:49 - [info]Updated Platinum dealer site products.
+14:16:49 - [info]Updated Palladium products in central catalog.
+14:16:49 - [info]Updated Palladium dealer site products.
+14:16:49 - [info]Finished catalog mirroring process.
+16:11:12 - [info]Beginning catalog mirroring process.
+16:11:15 - [info]Updated Gold products in central catalog.
+16:11:15 - [info]Updated Gold dealer site products.
+16:11:17 - [info]Updated Silver products in central catalog.
+16:11:17 - [info]Updated Silver dealer site products.
+16:11:17 - [info]Updated Platinum products in central catalog.
+16:11:17 - [info]Updated Platinum dealer site products.
+16:11:17 - [info]Updated Palladium products in central catalog.
+16:11:17 - [info]Updated Palladium dealer site products.
+16:11:17 - [info]Finished catalog mirroring process.

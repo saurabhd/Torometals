@@ -1,0 +1,119 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ */
+ @import url('tooltipster.css');
+ .hide{
+ 	display: none;
+ }
+ .cwa-warning{
+ 	color: red;
+ }
+ .cwa-success{
+ 	color: green;
+ }
+ .cwa-error{
+ 	border: 1px solid transparent;
+ 	padding: 10px;
+ 	margin-bottom: 10px;
+	width: 96%;
+	font-size: 14px;
+	border-radius: 5px;
+	background: rgba(255,255,255,0.8);
+ }
+ .cwa-error.cwa-success{
+ 	border-color: green;
+ }
+
+ .cwa-error.cwa-warning{
+ 	border-color: red;
+ }
+ .col{
+ 	float: left;
+ }
+ .col-8{
+ 	min-width: 400px;
+ 	width: 60%;
+ }
+ .col-4{
+ 	min-width: 300px;
+ 	width: 40%;
+ }
+.cwa-form{
+	margin-right: 20px;
+	border: 1px solid #ddd;
+	/* margin-top: 10px; */
+	padding: 10px;
+	border-radius: 5px;
+}
+ .cwa-form-label{
+ 	min-width: 200px;
+ 	display: inline-block;
+ 	font-size: 14px;
+ 	vertical-align: top;
+ 	line-height: 30px;
+ }
+ .cwa-form-row{
+ 	margin-bottom: 5px;
+ 	padding: 5px;
+ }	
+ .cwa-form input[type=text], .cwa-form input[type=password], .cwa-form input[type=email], .cwa-form select, .cwa-form textarea{
+ 	padding: 5px 10px;
+ 	border-radius: 5px;
+ 	min-width: 40%;
+ 	line-height: 25px;
+ }
+ .custom-wp{
+ 	padding: 20px 10px;
+ }
+
+ .cwa-table{
+ 	width: 98%;
+ 	background: #fff;
+ 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	line-height: 30px;
+	border-collapse:collapse;
+ }
+ .cwa-table>thead{
+ 	text-align: left;
+ }
+ .cwa-table>thead tr{
+ 	background-color: #999;
+ 	color: #fff;
+ }
+ .cwa-table th:first-child, .cwa-table td:first-child{
+ 	padding-left: 15px;
+ }
+ .cwa-table th:last-child, .cwa-table td:last-child{
+ 	padding-right: 15px;
+ }
+.cwa-table>tbody tr:nth-child(even){
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+ .cwa-btn{
+ 	border-radius: 5px;
+	border: 1px solid transparent;
+	padding: 8px 15px !important;
+	min-width: 120px !important;
+ 	font-weight: bold;
+ }
+ .cwa-btn.cwa-btn-primary{
+ 	background-color: #0074a2;
+ 	color: #fff;
+ }
+ .cwa-btn.cwa-btn-danger{
+ 	background-color: #B40404 !important;
+ 	color: #fff !important;
+ }
+ input[type=submit], input[type=reset], button{
+ 	cursor: pointer;
+ }
+ .how-to{
+ 	padding: 10px;
+	background: #ddd;
+	border-radius: 5px;
+	color: #333;
+	
+ }

@@ -1,0 +1,203 @@
+/* micro clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+input:disabled					{ background-color: #dddddd; }
+div.ft-error { 
+	padding: 0 0.6em;
+	margin: 5px 0 15px;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #FFEBE8;
+    border-color: #CC0000;
+}
+
+div.show_if_fiztrade,
+div.show_if_dealer{
+	position:relative;
+}
+
+div.show_if_fiztrade #ft-opts{
+	float:left;
+	width:60%;
+}
+
+div.show_if_fiztrade #gallery{
+	float:left;
+	/*width:40%;
+	min-width:200px;
+	min-height:200px;*/
+	width:200px;
+	height:200px;
+	margin:15px 15px 15px 0;
+}
+
+div.update-btn{
+	position:absolute;
+	top:8px;
+	left:110px;
+	cursor:pointer;
+}
+
+/* Volume Breaks table */
+.tiers-title {
+	display:inline-block;
+}
+
+.update-tiers-btn{
+	display:inline-block;
+	margin-left:10px;
+	cursor:pointer;
+}
+.ajax-loading9 {
+	font-weight:bold;
+	margin-left:30px;
+}
+#volume_breaks_data label.dealer {
+	width:30%;
+	margin-left:82px;
+}
+
+#volume_breaks_data label.dealer input{
+	float:none;
+	width:auto;
+}
+
+#vol-breaks {
+	margin:25px 50px;
+	border-collapse:separate;
+}
+
+#vol-breaks tbody input[type="number"] {
+	-moz-box-sizing: border-box;
+    width: 100%;
+}
+#vol-breaks .ui-button {
+	border:1px solid gray;
+	border-radius:2px;
+	cursor:pointer;
+	background-repeat:no-repeat;
+}
+/*
+#vol-breaks .ui-button.insert {
+	background-image:url('/wp-includes/images/wpicons.png');
+	background-position:-500px -1px;
+}
+
+#vol-breaks .ui-button.delete {
+	background-image:url('/wp-includes/images/uploader-icons.png');
+	background-position:-97px 2px;
+}
+
+#vol-breaks .ui-button.moveUp {
+	background-image:url('/wp-includes/images/toggle-arrow-2x.png');
+	background-position:-10px -60px;
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+	filter: FlipV;
+	-ms-filter: "FlipV";
+}
+
+#vol-breaks .ui-button.moveDown {
+	background-image:url('/wp-includes/images/toggle-arrow-2x.png');
+	background-position:-10px -59px;
+}
+
+#vol-breaks tfoot button[title="Append Row"] {
+	background-image:url('/wp-includes/images/admin-bar-sprite.png');
+	background-position:4px -200px;
+}
+*/
+#vol-breaks tfoot button[title="Remove Last Row"] {
+	display:none;
+}
+
+
+.woocommerce_options_panel .options_group fieldset.radio-horiz ul li {
+	float:left;
+	margin-right:15px;
+}
+
+.woocommerce_order_items_wrapper table.woocommerce_order_items th.item {
+	min-width:0;
+}
+.woocommerce_order_items_wrapper table.woocommerce_order_items td.thumb {
+	width:0;
+	padding:0;
+	margin:0;
+}
+.woocommerce_order_items_wrapper table.woocommerce_order_items td.thumb img{
+	display:none;
+}
+.woocommerce_order_items_wrapper table.woocommerce_order_items td.name{
+	width:120px;
+}
+
+/* Orders menu buttons */
+.order_actions .forward,
+.order_actions .execute, 
+.order_actions .cancel {
+	display: block;
+	text-indent: -9999px;
+	position: relative;
+	padding: 0!important;
+	height: 2em!important;
+	width: 2em;
+}
+/*
+.order_actions .forward:after {
+	content: "\e029";
+	color:#0a5d92;
+	background-color:#a29052;
+}
+*/
+.order_actions .forward {
+	background:url('img/right-arrow.png') -1px -2px !important;
+	box-shadow:none;
+}
+
+.order_actions .execute:after {
+	content: "\e017";
+}
+
+.order_actions .cancel:after {
+	content: "\e013";
+}
+
+.order_actions .forward:after,
+.order_actions .execute:after, 
+.order_actions .cancel:after {
+	font-family: WooCommerce;
+	speak: none;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	text-indent: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 1.85;
+}

@@ -1,0 +1,3 @@
+table.woocommerce_order_items .tax_class {
+	display:none;
+}

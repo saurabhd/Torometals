@@ -1,0 +1,12 @@
+#out-of-hours { font-size:.8em; }
+
+#market-hours {
+	font-size:.7em;
+	white-space:nowrap;
+	background-color:#ededed;
+	border-width:1px;
+	border-style:solid;
+	border-color:inherit;
+	padding:.6em;
+	border-radius:3px;
+}
