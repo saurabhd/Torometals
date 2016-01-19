@@ -30,6 +30,22 @@
   line-height: 14px;
 }
 
+
+/**
+ * Form design
+ */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea,
+select {
+  max-width: 400px;
+  width: 100%;
+}
+
+
 /**
  * Header
  */
@@ -336,7 +352,7 @@
   float:left;
 }
 .site-header .col-full #site-navigation {
-  width:80%;
+  width: 100%;
 }
 
 #menu-upper_top li a {
@@ -450,8 +466,8 @@
 .site-content {
   display:block;
   width:100%;
+  min-height: 260px;
   margin:0 auto;
-  /*padding:30px;*/
 }
 .site-content .content-area {
   padding: 30px 10px;
@@ -1135,7 +1151,15 @@ h2.widgettitle {
 #home-spotcombochart {
   display: inline-block;
   width: 100%;
-  padding: 30px 50px 10px
+  padding: 30px 50px 10px;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+#home-spotcombochart .spotCombo {
+  float: left;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 /* End */
 
@@ -1235,16 +1259,32 @@ h2.widgettitle {
   /* End */
 }
 
+@media (orientation: portrait) {
+  .main-spot-price .spot-price,
+  .main-spot-price .gold-graph {
+    -webkit-animation: fixWebkitOverflowScroll 1s;
+  }
+
+  @-webkit-keyframes fixWebkitOverflowScroll
+  {
+    0%   { padding-bottom: 1px; }
+    100% { padding-bottom: 0px; }
+  }
+}
+
 /* I pad landscape & portrait view */
 @media screen and (max-width: 1024px) {
   .site-header .upper-top .align-L .phone a,
-  .toll-no-store #text-7 .Top-right-search .Top_C_number span a{color:#fff; font-weight:normal;}
+  .toll-no-store #text-7 .Top-right-search .Top_C_number span a {
+    color:#fff;
+    font-weight:normal;
+  }
 }
 
 /* I pad portrait view only */
 @media screen and (max-width: 992px) {
   /* Mobile view menu */
-  .main-navigation{float:none;}
+  .main-navigation { float:none; }
   .menu-toggle:before{
     content: "\f0c9";
     color: #fff;
@@ -1256,11 +1296,11 @@ h2.widgettitle {
     margin: 0;
     padding: 0;
     text-indent: 0;
-    width: 26px;
+    width: 27px;
   }
   .menu-toggle {
     display: block;
-    float: left;
+    float: right;
     height: 36px;
     margin: 5px 0 0;
     outline: medium none;
@@ -1268,7 +1308,7 @@ h2.widgettitle {
     text-indent: -9999px;
     width: 36px;
   }
-  .site-header .col-full #site-navigation{width:auto;}
+  .site-header .col-full #site-navigation {/*width:auto;*/}
   .main-navigation #menu-main-menu{display:none;}
   .main-navigation.toggled #menu-main-menu{display:block;}
   .site-header .col-full #site-navigation .menu li{width:100%;}

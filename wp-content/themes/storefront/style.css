@@ -1489,7 +1489,7 @@ fieldset legend { font-weight: 700; }
 	margin-right: 0;
 }
 .site-header .col-full .main_menu_h #site-navigation {
-	width: auto;
+	/*width: auto;*/
 }
 
 .login-register-cart {

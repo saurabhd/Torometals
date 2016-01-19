@@ -110,7 +110,9 @@ get_header(); ?>
 				</div>
 				<div class="row">
 					<div class="col-sm-4">
-						<iframe id="spotCombo" name="spotCombo" height="580" width="100%" frameborder="0" scrolling="no"></iframe>
+						<div class="spotCombo">
+							<iframe id="spotCombo" name="spotCombo" height="580" width="100%" frameborder="0" scrolling="no"></iframe>
+						</div>
 					</div>
 				</div> 
 			</div>   
