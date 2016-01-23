@@ -20,6 +20,8 @@
 
 	.wp-post-image {
 		margin-bottom: 1.618em;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.entry-header {
@@ -96,7 +98,7 @@
 	}
 }
 
-@media screen and (min-width: 768px) {
+@include susy-media($desktop) {
 	.hentry.type-post {
 		@include clearfix;
 

@@ -6,7 +6,7 @@
  * This file is used to markup the public-facing aspects of the plugin.
  *
  * @link       http://example.com
- * @since      1.0.3
+ * @since      1.1.5
  *
  * @package    Custom_Widget_Area
  * @subpackage Custom_Widget_Area/admin/partials
@@ -21,20 +21,28 @@ class CWA_view
 	{
 		# code...
 	}
-	public function cwa_settings_page(){
-		add_action( 'add_meta_boxes', self::displayView());
-	}
+	
 	public function displayView(){
 
 		
 		global $purl;
 		?>
 		
-		<div class="wrap">
+		<div class="wrap cwa">
  
             <div id="icon-themes" class="icon32"><br /></div>
- 
-            <h2><?php _e( 'Custom widget area', 'wp-custom-widget-area' ); ?></h2>
+ 			<ul class="tabs">
+ 				<li class="active">
+ 					<h3><a href="<?php echo admin_url();?>admin.php?page=custom_widget_area"><?php _e( 'Custom widget area', 'wp-custom-widget-area' ); ?></a></h3>
+ 				</li>
+ 				<li>
+ 					<h3><a href="<?php echo admin_url();?>admin.php?page=custom_menu_location"><?php _e( 'Custom menu location', 'wp-custom-widget-area' ); ?></a></h3>
+ 				</li>
+ 				<li>
+ 					<h3><a href="<?php echo admin_url();?>admin.php?page=cwa_help"><?php _e( 'Help', 'wp-custom-widget-area' ); ?></a></h3>
+ 				</li>
+ 			</ul>
+            
 
 			<div class="welcome-panel custom-wp">
 				<div class="col col-8">
@@ -42,44 +50,7 @@ class CWA_view
 						self::widgetForm();
 					?>
 				</div>
-				<div class="col col-4">
-					<div class="how-to">
-						<h3>How to use?</h3>
-						<p>
-							<ol class="list">
-								<li>Create a new Widget area.</li>
-								<li>Click on the "get code" link.</li>
-								<li>Copy the code and Paste it in a wordpress theme where you want to display it.</li>
-							</ol>
-						</p>
-						<br/>
-						<h4 style="margin-top: 0;">How to Use it in page or post content?</h4>
-						<p>
-							<ol class="list">
-								<li>Click on the "get shortcode" link form widget area table below.</li>
-								<li>Copy the shortcode and Paste it in a post or page editor in which you want it to display it.</li>
-							</ol>
-						</p>	
-						<br/>
-						<h4 style="margin-top: 0;">How to customize widget style?</h4>
-						<p>
-							<ol class="list">
-								<li>Click on the advance link while creating new widget area and add widget class.</li>
-								<li>Add custom css targeting your widget area class. i.e. <br>
-								<code>
-									.mynewwidgetareaclass a{
-										color: red;
-									} 
-								</code><br>
-								at the bottom of your style.css 
-								where ".mynewwidgetareaclass" is your widget area class.
-								</li>
-							</ol>
-						</p>	
-					</div>
-				</div>
 				
-			
 			</div>
 		</div>
 		<div class="cwa-error" style="display:none;">
@@ -96,25 +67,27 @@ class CWA_view
 		?>
 		<form class="cwa-form" method="post" action="" id="cwa-form">
 			<input type="hidden" name="id">
+			<input type="hidden" name="task">
+			<input type="hidden" name="updateid">
 			<div class="basic">
 				<div class="cwa-form-row">
-					<label  class="cwa-form-label">Name </label><input type="text" name="cwa_name" placeholder="Widget area name" required>	<span class="cwa-form-message"></span>
+					<label  class="cwa-form-label" for="cwa_name" >Name </label><input type="text" id="cwa_name" name="cwa_name" placeholder="Widget area name" required>	<span class="cwa-form-message"></span>
 				</div>
 				<div class="cwa-form-row">
-					<label class="cwa-form-label">Id </label><input type="text" name="cwa_id" placeholder="Widget area id" required><span class="cwa-form-message"></span>
+					<label class="cwa-form-label" for="cwa_id">Id </label><input type="text" name="cwa_id" id="cwa_id" placeholder="Widget area id" required><span class="cwa-form-message"></span>
 				</div>
 				<div class="cwa-form-row">
-					<label class="cwa-form-label">Description</label><input type="text" name="cwa_description" placeholder="Description"><span class="cwa-form-message"></span>
+					<label class="cwa-form-label" for="cwa_description">Description</label><input type="text" id="cwa_description" name="cwa_description" placeholder="Description"><span class="cwa-form-message"></span>
 				</div> 
 					
 			</div>
 			<div class="advanced hide">
 				<div class="cwa-form-row">
-					<label class="cwa-form-label">Widget class</label><input type="text" name="cwa_widget_class" placeholder="Class"><span class="cwa-form-message"></span>
+					<label class="cwa-form-label" for="cwa_widget_class">Widget class</label><input type="text" id="cwa_widget_class" name="cwa_widget_class" placeholder="Class"><span class="cwa-form-message"></span>
 				</div>
 				<div class="cwa-form-row">
-					<label class="cwa-form-label">Before/After widget </label>
-					<select name="cwa_widget_wrapper">
+					<label class="cwa-form-label" for="cwa_widget_wrapper">Before/After widget </label>
+					<select name="cwa_widget_wrapper" id="cwa_widget_wrapper">
 						<option selected value="li">li</option>
 						<option value="div">div</option>
 						<option value="aside">aside</option>
@@ -123,11 +96,11 @@ class CWA_view
 					<span class="cwa-form-message"></span>
 				</div>
 				<div class="cwa-form-row">
-					<label class="cwa-form-label">Widget title class</label><input type="text" name="cwa_widget_header_class" placeholder="Class"><span class="cwa-form-message"></span>
+					<label class="cwa-form-label" for="cwa_widget_header_class">Widget title class</label><input type="text" id="cwa_widget_header_class" name="cwa_widget_header_class" placeholder="Class"><span class="cwa-form-message"></span>
 				</div>
 				<div class="cwa-form-row">
-					<label class="cwa-form-label">Before/After widget title </label>
-					<select name="cwa_widget_header_wrapper">
+					<label class="cwa-form-label" for="cwa_widget_header_wrapper">Before/After widget title </label>
+					<select id="cwa_widget_header_wrapper" name="cwa_widget_header_wrapper">
 						<option value="h1">h1</option>
 						<option selected value="h2">h2</option>
 						<option value="h3">h3</option>
@@ -170,6 +143,13 @@ class CWA_view
 			<tbody>
 				<?php 
 				$count = 1;
+				if(empty($data)){
+					?>
+					<tr>
+						<td colspan="8" class="no-data">There is no data. create a new Widget area by filling above form.</td>
+					</tr>
+					<?php 
+				}
 				foreach ($data as $table) {
 					# code...
 					?>
@@ -181,7 +161,7 @@ class CWA_view
 						<td><?php echo $table->cwa_widget_class; ?></td>
 						<td><?php echo $table->cwa_widget_header_class; ?></td>
 						<td><a href="#get_shortcode" data-id="<?php echo $table->cwa_id; ?>" class="cwa-detail-link tooltip" title="[cwa id='<?php echo $table->cwa_id; ?>']">Get shortcode</a> </td>
-						<td><a href="#get_code" data-id="<?php echo $table->cwa_id; ?>" class="cwa-detail-link tooltip" title="dynamic_sidebar( '<?php echo $table->cwa_id; ?>' );">Get code</a> / <a href="#delete" data-id="<?php echo $table->cwa_id; ?>" class="cwa-delete-link">Delete</a></td>
+						<td><a href="#get_code" data-id="<?php echo $table->cwa_id; ?>" class="cwa-detail-link tooltip" title="dynamic_sidebar( '<?php echo $table->cwa_id; ?>' );">Get code</a> / <a href="#edit" data-id="<?php echo $table->cwa_id; ?>" class="cwa-edit-link">Edit</a> / <a href="#delete" data-id="<?php echo $table->cwa_id; ?>" class="cwa-delete-link">Delete</a></td>
 					</tr>
 					<?php
 					$count++;
@@ -197,7 +177,7 @@ class CWA_view
 	public function getWidgetData(){
 		global $wpdb, $table_name;
 
-		$sql = "SELECT * FROM $table_name";
+		$sql = "SELECT * FROM $table_name WHERE cwa_type='widget'";
 
 		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 		$row = $wpdb->get_results( $sql, 'OBJECT');

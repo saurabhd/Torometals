@@ -77,6 +77,8 @@ define('WP_DEBUG', false);
 define('WP_DEBUG_LOG', true);
 define('WP_DEBUG_DISPLAY', false);
 
+# DISABLE WORDPRESS UPDATES
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
 /* That's all, stop editing! Happy blogging. */
 

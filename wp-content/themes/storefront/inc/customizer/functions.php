@@ -47,15 +47,14 @@ if ( ! function_exists( 'storefront_sanitize_hex_color' ) ) {
  */
 if ( ! function_exists( 'storefront_sanitize_choices' ) ) {
     function storefront_sanitize_choices( $input, $setting ) {
-        global $wp_customize;
+        // Ensure input is a slug.
+        $input = sanitize_key( $input );
 
-        $control = $wp_customize->get_control( $setting->id );
+        // Get list of choices from the control associated with the setting.
+        $choices = $setting->manager->get_control( $setting->id )->choices;
 
-        if ( array_key_exists( $input, $control->choices ) ) {
-            return $input;
-        } else {
-            return $setting->default;
-        }
+        // If the input is a valid key, return it; otherwise, return the default.
+        return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
     }
 }
 
@@ -82,6 +81,20 @@ if ( ! function_exists( 'storefront_sanitize_layout' ) ) {
 }
 
 /**
+ * Checkbox sanitization callback.
+ *
+ * Sanitization callback for 'checkbox' type controls. This callback sanitizes `$checked`
+ * as a boolean value, either TRUE or FALSE.
+ *
+ * @param bool $checked Whether the checkbox is checked.
+ * @return bool Whether the checkbox is checked.
+ * @since  1.5.0
+ */
+function storefront_sanitize_checkbox( $checked ) {
+    return (bool) $checked;
+}
+
+/**
  * Layout classes
  * Adds 'right-sidebar' and 'left-sidebar' classes to the body tag
  * @param  array $classes current body classes
@@ -89,13 +102,9 @@ if ( ! function_exists( 'storefront_sanitize_layout' ) ) {
  * @since  1.0.0
  */
 function storefront_layout_class( $classes ) {
-	$layout = get_theme_mod( 'storefront_layout' );
+	$left_or_right = get_theme_mod( 'storefront_layout', apply_filters( 'storefront_default_layout', $layout = is_rtl() ? 'left' : 'right' ) );
 
-	if ( '' == $layout ) {
-		$layout = 'right';
-	}
-
-	$classes[] = $layout . '-sidebar';
+	$classes[] = $left_or_right . '-sidebar';
 
 	return $classes;
 }
@@ -134,4 +143,74 @@ function storefront_adjust_color_brightness( $hex, $steps ) {
     $b_hex  = str_pad( dechex( $b ), 2, '0', STR_PAD_LEFT );
 
     return '#' . $r_hex . $g_hex . $b_hex;
+}
+
+/**
+ * Add CSS for custom controls
+ *
+ * This function incorporates CSS from the Kirki Customizer Framework
+ *
+ * The Kirki Customizer Framework, Copyright Aristeides Stathopoulos (@aristath),
+ * is licensed under the terms of the GNU GPL, Version 2 (or later)
+ *
+ * @link https://github.com/reduxframework/kirki/
+ * @since  1.5.0
+ */
+function storefront_customizer_custom_control_css() {
+    ?>
+    <style>
+    .customize-control-radio-image .image.ui-buttonset input[type=radio] {
+        height: auto;
+    }
+    .customize-control-radio-image .image.ui-buttonset label {
+        display: inline-block;
+        width: 48%;
+        padding: 1%;
+        box-sizing: border-box;
+    }
+    .customize-control-radio-image .image.ui-buttonset label.ui-state-active {
+        background: none;
+    }
+    .customize-control-radio-image .customize-control-radio-buttonset label {
+        background: #f7f7f7;
+        line-height: 35px;
+    }
+    .customize-control-radio-image label img {
+        opacity: 0.5;
+    }
+    #customize-controls .customize-control-radio-image label img {
+        height: auto;
+    }
+    .customize-control-radio-image label.ui-state-active img {
+        background: #dedede;
+        opacity: 1;
+    }
+    .customize-control-radio-image label.ui-state-hover img {
+        opacity: 1;
+        box-shadow: 0 0 0 3px #f6f6f6;
+    }
+    </style>
+    <?php
+}
+
+/**
+ * Get the content background color
+ * Accounts for the Storefront Designer's content background option.
+ * @since  1.6.0
+ * @return string the backgrounc color
+ */
+function storefront_get_content_background_color() {
+    // Set the bg color var based on whether the Storefront designer has set a content bg color or not.
+    $content_bg_color   = storefront_sanitize_hex_color( get_theme_mod( 'sd_content_background_color' ) );
+    $content_frame      = get_theme_mod( 'sd_fixed_width' );
+
+    // Set the bg color based on the default theme option
+    $bg_color   = str_replace( '#', '', get_theme_mod( 'background_color' ) );
+
+    // But if the Storefront Designer extension is active, and the content frame option is enabled we need that bg color instead
+    if ( $content_bg_color && 'true' == $content_frame && class_exists( 'Storefront_Designer' ) ) {
+        $bg_color   = str_replace( '#', '', $content_bg_color );
+    }
+
+    return '#' . $bg_color;
 }

@@ -7,7 +7,7 @@
  * public-facing side of the site and the dashboard.
  *
  * @link       http://example.com
- * @since      1.0.3
+ * @since      1.1.5
  *
  * @package    Custom_Widget_Area
  * @subpackage Custom_Widget_Area/includes
@@ -22,7 +22,7 @@
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @since      1.0.3
+ * @since      1.1.5
  * @package    Custom_Widget_Area
  * @subpackage Custom_Widget_Area/includes
  * @author     Your Name <email@example.com>
@@ -33,7 +33,7 @@ class Custom_Widget_Area {
 	 * The loader that's responsible for maintaining and registering all hooks that power
 	 * the plugin.
 	 *
-	 * @since    1.0.3
+	 * @since    1.1.5
 	 * @access   protected
 	 * @var      Custom_Widget_Area_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
@@ -42,7 +42,7 @@ class Custom_Widget_Area {
 	/**
 	 * The unique identifier of this plugin.
 	 *
-	 * @since    1.0.3
+	 * @since    1.1.5
 	 * @access   protected
 	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
 	 */
@@ -51,7 +51,7 @@ class Custom_Widget_Area {
 	/**
 	 * The current version of the plugin.
 	 *
-	 * @since    1.0.3
+	 * @since    1.1.5
 	 * @access   protected
 	 * @var      string    $version    The current version of the plugin.
 	 */
@@ -64,12 +64,12 @@ class Custom_Widget_Area {
 	 * Load the dependencies, define the locale, and set the hooks for the Dashboard and
 	 * the public-facing side of the site.
 	 *
-	 * @since    1.0.3
+	 * @since    1.1.5
 	 */
 	public function __construct() {
 
 		$this->plugin_name = 'wp-custom-widget-area';
-		$this->version = '1.0.3';
+		$this->version = '1.1.5';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -91,7 +91,7 @@ class Custom_Widget_Area {
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
 	 *
-	 * @since    1.0.3
+	 * @since    1.1.5
 	 * @access   private
 	 */
 	private function load_dependencies() {
@@ -125,7 +125,7 @@ class Custom_Widget_Area {
 	 * Uses the Custom_Widget_Area_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
-	 * @since    1.0.3
+	 * @since    1.1.5
 	 * @access   private
 	 */
 	private function set_locale() {
@@ -141,13 +141,13 @@ class Custom_Widget_Area {
 	 * Register all of the hooks related to the dashboard functionality
 	 * of the plugin.
 	 *
-	 * @since    1.0.3
+	 * @since    1.1.5
 	 * @access   private
 	 */
 	private function define_admin_hooks() {
 
 		$plugin_admin = new Custom_Widget_Area_Admin( $this->get_plugin_name(), $this->get_version() );
-		add_action( 'admin_menu', array($plugin_admin, 'menu_setup'));
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'menu_setup' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
@@ -155,6 +155,7 @@ class Custom_Widget_Area {
 
 	private function register_shortcode() {
 		add_shortcode( 'cwa', array($this, 'cwa_short') );
+		add_shortcode( 'menu', array($this, 'menu_short') );
 		//exit;
 
 	}
@@ -168,10 +169,26 @@ class Custom_Widget_Area {
 		return $output;
 	}
 
+	public function menu_short($attr){
+		//var_dump($attr);
+		$args = array();
+		foreach ($attr as $key => $value) {
+			# code...
+			$args[$key] = $value;
+		}
+		$args['fallback_cb'] = isset($args['fallback_cb'])? $args['fallback_cb'] : false ;
+		
+		ob_start();
+		wp_nav_menu( $args );
+		$output = ob_get_contents();
+		ob_end_clean();
+		return $output;
+	}
+
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.
 	 *
-	 * @since    1.0.3
+	 * @since    1.1.5
 	 */
 	public function run() {
 		$this->loader->run();
@@ -181,7 +198,7 @@ class Custom_Widget_Area {
 	 * The name of the plugin used to uniquely identify it within the context of
 	 * WordPress and to define internationalization functionality.
 	 *
-	 * @since     1.0.3
+	 * @since     1.1.5
 	 * @return    string    The name of the plugin.
 	 */
 	public function get_plugin_name() {
@@ -191,7 +208,7 @@ class Custom_Widget_Area {
 	/**
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
-	 * @since     1.0.3
+	 * @since     1.1.5
 	 * @return    Custom_Widget_Area_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
@@ -201,7 +218,7 @@ class Custom_Widget_Area {
 	/**
 	 * Retrieve the version number of the plugin.
 	 *
-	 * @since     1.0.3
+	 * @since     1.1.5
 	 * @return    string    The version number of the plugin.
 	 */
 	public function get_version() {

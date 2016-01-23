@@ -2,7 +2,18 @@
  * General Layout
  */
 
-@media screen and (min-width: 768px) {
+@include susy-media($desktop) {
+	table.shop_table_responsive {
+		tbody {
+			tr {
+				td,
+				th {
+					text-align: left;
+				}
+			}
+		}
+	}
+
 	.site-header {
 		.site-branding,
 		.site-logo-anchor,
@@ -53,7 +64,8 @@
 	.site-branding,
 	.site-search,
 	.site-header-cart,
-	.site-logo-anchor {
+	.site-logo-anchor,
+	.site-logo-link {
 		margin-bottom: 1em;
 	}
 
@@ -80,7 +92,7 @@
 
 	.col-full {
 		@include clearfix;
-		@include container(65.141em);
+		@include container($container-width);
 	}
 
 	.site-content {
@@ -176,14 +188,14 @@
 	}
 }
 
-@media screen and (max-width: 65.141em) {
+@include susy-media (max-width $container-width) {
 	.col-full {
 		margin-left: 2.618em;
 		margin-right: 2.618em;
 	}
 }
 
-@media screen and (max-width: 568px) {
+@include susy-media (max-width $handheld) {
 	.col-full {
 		margin-left: 1.387em;
 		margin-right: 1.387em;

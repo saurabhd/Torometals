@@ -3,8 +3,8 @@ Contributors: woothemes,mattyza,jameskoster,tiagonoronha
 Donate link: http://woothemes.com/
 Tags: homepage, hooks, theme-mod, components, customizer
 Requires at least: 3.8.1
-Tested up to: 4.2.1
-Stable tag: 2.0.0
+Tested up to: 4.2.2
+Stable tag: 2.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -61,6 +61,11 @@ We encourage everyone to contribute their ideas, thoughts and code snippets. Thi
 * Initial release. Woo!
 
 == Changelog ==
+
+= 2.0.1 =
+* 2015-06-01
+* Make sure only components that actually exist are outputted to the customizer control (props valendesigns).
+* Hide by default components added after the initial setup.
 
 = 2.0.0 =
 * 2015-04-28

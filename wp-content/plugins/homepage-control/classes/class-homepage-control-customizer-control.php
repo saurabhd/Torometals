@@ -25,7 +25,7 @@ class Homepage_Control_Customizer_Control extends WP_Customize_Control {
 		} else {
 			$components         = $this->choices;
 			$order              = $this->value();
-			$disabled			= $this->_get_disabled_components( $this->value() );
+			$disabled			= $this->_get_disabled_components( $this->value(), $components );
 			?>
 			<label>
 				<?php
@@ -38,14 +38,29 @@ class Homepage_Control_Customizer_Control extends WP_Customize_Control {
 				?>
 				<ul class="homepage-control">
 					<?php $components = $this->_reorder_components( $components, $order ); ?>
-					<?php foreach ( $components as $k => $v ) : ?>
+					<?php foreach ( $components as $id => $title ) : ?>
 						<?php
 							$class = '';
-							if ( in_array( $k, $disabled ) ) {
+							if ( in_array( $id, $disabled ) ) {
 								$class = 'disabled';
 							}
+
+							/**
+							 * Filter the control title.
+							 *
+							 * @since 2.0.1
+							 *
+							 * @param string $title The control title.
+							 * @param string $id The action hook function ID.
+							 */
+							$title = apply_filters( 'homepage_control_title', $title, $id );
+
+							// Nothing to display.
+							if ( empty( $title ) ) {
+								continue;
+							}
 						?>
-						<li id="<?php echo esc_attr( $k ); ?>" class="<?php echo $class; ?>"><span class="visibility"></span><?php echo esc_attr( $v ); ?></li>
+						<li id="<?php echo esc_attr( $id ); ?>" class="<?php echo $class; ?>"><span class="visibility"></span><?php echo esc_attr( $title ); ?></li>
 					<?php endforeach; ?>
 				</ul>
 				<input type="hidden" <?php $this->link(); ?> value="<?php echo esc_attr( $this->value() ); ?>"/>
@@ -74,8 +89,12 @@ class Homepage_Control_Customizer_Control extends WP_Customize_Control {
 				if ( $this->_is_component_disabled( $v ) ) {
 					$v = str_replace( '[disabled]', '', $v );
 				}
-				$components[ $v ] = $original_components[ $v ];
-				unset( $original_components[ $v ] );
+
+				// Only add to array if component still exists
+				if ( isset( $original_components[ $v ] ) ) {
+					$components[ $v ] = $original_components[ $v ];
+					unset( $original_components[ $v ] );
+				}
 			}
 			if ( 0 < count( $original_components ) ) {
 				$components = array_merge( $components, $original_components );
@@ -104,16 +123,25 @@ class Homepage_Control_Customizer_Control extends WP_Customize_Control {
 	 * @since   2.0.0
 	 * @return  array An array of disabled components.
 	 */
-	private function _get_disabled_components ( $components ) {
+	private function _get_disabled_components ( $saved_components, $all_components ) {
 		$disabled = array();
-		if ( '' != $components ) {
-			$components = explode( ',', $components );
+		if ( '' != $saved_components ) {
+			$saved_components = explode( ',', $saved_components );
 
-			if ( 0 < count( $components ) ) {
-				foreach ( $components as $k => $v ) {
+			if ( 0 < count( $saved_components ) ) {
+				foreach ( $saved_components as $k => $v ) {
 					if ( $this->_is_component_disabled( $v ) ) {
-						$disabled[] = str_replace( '[disabled]', '', $v );
+						$v = str_replace( '[disabled]', '', $v );
+						$disabled[] = $v;
 					}
+					unset( $all_components[ $v ] );
+				}
+			}
+
+			// Disable new components
+			if ( 0 < count( $all_components ) ) {
+				foreach ( $all_components as $k => $v ) {
+					$disabled[] = $k;
 				}
 			}
 		}

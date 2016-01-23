@@ -41,8 +41,12 @@ if ( ! function_exists( 'storefront_add_customizer_css' ) ) {
 		}
 
 		.main-navigation ul li a:hover,
-		.site-title a:hover {
-			color: ' . storefront_adjust_color_brightness( $header_link_color, $darken_factor ) . ';
+		.main-navigation ul li:hover > a,
+		.site-title a:hover,
+		a.cart-contents:hover,
+		.site-header-cart .widget_shopping_cart a:hover,
+		.site-header-cart:hover > li > a {
+			color: ' . storefront_adjust_color_brightness( $header_link_color, -100 ) . ';
 		}
 
 		.site-header,
@@ -56,7 +60,8 @@ if ( ! function_exists( 'storefront_add_customizer_css' ) ) {
 		}
 
 		p.site-description,
-		ul.menu li.current-menu-item > a {
+		ul.menu li.current-menu-item > a,
+		.site-header {
 			color: ' . $header_text_color . ';
 		}
 
@@ -134,9 +139,13 @@ if ( ! function_exists( 'storefront_add_customizer_css' ) ) {
 			color: ' . $footer_heading_color . ';
 		}
 
+		#order_review {
+			background-color: ' . storefront_get_content_background_color() . ';
+		}
+
 		@media screen and ( min-width: 768px ) {
 			.main-navigation ul.menu > li > ul {
-				border-top-color: ' . $header_background_color . '}
+				border-top-color: ' . $header_background_color . ';
 			}
 
 			.secondary-navigation ul.menu a:hover {
@@ -156,11 +165,6 @@ if ( ! function_exists( 'storefront_add_customizer_css' ) ) {
 		a.cart-contents,
 		.site-header-cart .widget_shopping_cart a {
 			color: ' . $header_link_color . ';
-		}
-
-		a.cart-contents:hover,
-		.site-header-cart .widget_shopping_cart a:hover {
-			color: ' . storefront_adjust_color_brightness( $header_link_color, $darken_factor ) . ';
 		}
 
 		.site-header-cart .widget_shopping_cart {

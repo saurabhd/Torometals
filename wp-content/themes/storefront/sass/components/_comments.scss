@@ -113,7 +113,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@include susy-media($desktop) {
 	.comment-list {
 		@include clearfix;
 

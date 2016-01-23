@@ -1,6 +1,7 @@
 <?php 
 /*plugin configs*/
-$kz_db_version = '1.0.3';
+global $wpdb;
+$kz_db_version = '1.2.1';
 $table_name = $wpdb->prefix . 'cwa';
 $charset_collate = '';
 ?>

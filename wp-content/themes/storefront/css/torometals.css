@@ -1009,21 +1009,21 @@ h2.widgettitle {
 .site-footer .col-full {
   float:left; margin:0; max-width:100%; padding:30px 0 0; width:100%;
 }
-.site-footer #text-2 {float:left; width:65%; list-style: none; margin:0; padding:10px 0 0 30px;}
-.site-footer #email-subscribers-2,
-.site-footer #text-4 {float:left; width:35%; list-style: none; margin:0; padding:10px 30px 0 0;}
-.site-footer #email-subscribers-2 .es_lablebox {display:none;}
-.site-footer #email-subscribers-2 .es_textbox {float:left; margin:0; padding:0;  width:calc(100% - 125px);}
-.site-footer #email-subscribers-2 .es_textbox input {
+.site-footer #text-9 {float:left; width:65%; list-style: none; margin:0; padding:10px 0 0 30px;}
+.site-footer #email-subscribers-3,
+.site-footer #text-10 {float:left; width:35%; list-style: none; margin:0; padding:10px 30px 0 0;}
+.site-footer #email-subscribers-3 .es_lablebox {display:none;}
+.site-footer #email-subscribers-3 .es_textbox {float:left; margin:0; padding:0;  width:calc(100% - 125px);}
+.site-footer #email-subscribers-3 .es_textbox input {
   border:none; padding:0 5px; margin:0; width:100%;
   border-radius:0; height:40px;
   font-style: italic;
 }
-.site-footer #email-subscribers-2 .es_button {float:left; width:auto; margin:0; padding:0;}
-.site-footer #email-subscribers-2 .es_button #es_txt_button {
+.site-footer #email-subscribers-3 .es_button {float:left; width:auto; margin:0; padding:0;}
+.site-footer #email-subscribers-3 .es_button #es_txt_button {
 	background:#2968A2; border:none; color:#fff; height:40px; outline:none; text-transform:uppercase; width:auto;
 }
-.site-footer #text-4 img {border: 1px solid #fff; height: 50px; width: auto;}
+.site-footer #text-10 img {border: 1px solid #fff; height: 50px; width: auto;}
 .site-footer .site-info {
 	float: left;
 	width: 100%;
@@ -1043,21 +1043,21 @@ h2.widgettitle {
 .site-footer ::-moz-placeholder          { color:#666; font-size:12px; }
 .site-footer :-ms-input-placeholder      { color:#666; font-size:12px; }
 
-.site-info #text-8 {
+.site-info #text-13 {
   float:right; width:auto; margin:0; list-style:none;
 }
-.site-info #text-8 .footer_logoicon,
-.site-info #text-8 .footer_social {
+.site-info #text-13 .footer_logoicon,
+.site-info #text-13 .footer_social {
   float:left;
   width:auto;
 }
-.site-info #text-8 .footer_logoicon img {
+.site-info #text-13 .footer_logoicon img {
   float: left;
   display: inline-block;
   height: 28px;
   margin: 0 0 0 5px;
 }
-.site-info #text-8 .footer_social a {
+.site-info #text-13 .footer_social a {
   position: relative;
   float: left;
   display: inline-block;
@@ -1068,15 +1068,15 @@ h2.widgettitle {
      -moz-transition: all 0.5s ease 0s;
           transition: all 0.5s ease 0s;
 }
-.site-info #text-8 .footer_social {
+.site-info #text-13 .footer_social {
   margin: 0 0 0 15px;
 }
-.site-info #text-8 .footer_social a img {
+.site-info #text-13 .footer_social a img {
   -webkit-transition: all 0.5s ease 0s;
      -moz-transition: all 0.5s ease 0s;
           transition: all 0.5s ease 0s;
 }
-.site-info #text-8 .footer_social a:hover img {
+.site-info #text-13 .footer_social a:hover img {
   margin-top: -38px;
   background-color: #fff;
 }
@@ -1367,7 +1367,7 @@ h2.widgettitle {
 	.archive ul.products li.product:nth-child(2n),
 	.home ul.products li.product:nth-child(2n){margin:0 !important;}
 	.archive ul.products li.product:nth-child(3n){clear:left !important; margin-right:5% !important;}
-	.site-footer #text-2,.site-footer #email-subscribers-2,.site-footer #text-4{
+	.site-footer #text-9,.site-footer #email-subscribers-3,.site-footer #text-10{
 		width:100%; padding:10px 20px;
 	}
 	.site-content .content-area{width:100%; margin-right:0;}
@@ -1380,8 +1380,8 @@ h2.widgettitle {
 	.crellyslider .cs-slide{height:270px !important;}
 	.crellyslider-slider .crellyslider ul li{padding:0 10px !important;}
 
-	.site-info #text-8 { float: left; margin: 10px 0 0; width: 100%;}
-	.site-info #text-8 .footer_social { float: right;}
+	.site-info #text-13 { float: left; margin: 10px 0 0; width: 100%;}
+	.site-info #text-13 .footer_social { float: right;}
 
   /* Slider section - Home */
   .main-spot-price .spot-price,
@@ -1427,8 +1427,8 @@ h2.widgettitle {
 	.crellyslider,
 	.crellyslider .cs-slide{height:240px !important;}
 	.crellyslider .cs-navigation{margin:0 !important;}
-	.site-info #text-8 .footer_social { float:  left; width: 100%; margin: 10px 0 0 0;}
-	.site-info #text-8 .footer_social a:nth-child(1) {padding:0; }
+	.site-info #text-13 .footer_social { float:  left; width: 100%; margin: 10px 0 0 0;}
+	.site-info #text-13 .footer_social a:nth-child(1) {padding:0; }
 
 	/* 404 error page*/
 	.errorcontainer .erroricon {

@@ -48,13 +48,11 @@ input[type="submit"],
 		border-color: $color_links;
 
 		&:hover {
-			opacity: 0.8;
 			background-color: $color_links;
 		}
 	}
 
 	&:hover {
-		opacity: 0.8;
 		color: #fff;
 	}
 
@@ -79,7 +77,8 @@ input[type="submit"],
 		font-size: .857em;
 	}
 
-	&.disabled {
+	&.disabled,
+	&:disabled {
 		opacity: 0.5 !important;
 
 		&:hover {

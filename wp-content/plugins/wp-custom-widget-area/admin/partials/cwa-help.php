@@ -89,7 +89,26 @@ function help_page(){
 								where ".mynewwidgetareaclass" is your widget area class.
 								</li>
 							</ol>
-						</p>	
+							<br>
+
+						</p>
+						<h2 style="margin-top: 0;">How to Update existing widget area? [New]</h2>	
+						<p>
+							<ol class="list">
+								<li><h4>Click on the edit link. </h4>
+									<br>
+									<img src="<?php echo $plugin_url;?>/admin/img/help/cwa_1_edit.png" >
+								</li>
+								<li>
+									<h4>Edit widget area field values. </h4><br>
+								</li>
+								<li>
+									<h4>Then submit a changes by clicking update button. </h4>
+									<br>
+									<img src="<?php echo $plugin_url;?>/admin/img/help/cwa_1_edit_save.png" >
+								</li>
+							</ol>
+						</p>
 					</div>
 				  </div>
 				  <div id="custom-menu-location">

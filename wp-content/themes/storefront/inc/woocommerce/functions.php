@@ -86,6 +86,32 @@ function storefront_woocommerce_scripts() {
 	global $storefront_version;
 
 	wp_enqueue_style( 'storefront-woocommerce-style', get_template_directory_uri() . '/inc/woocommerce/css/woocommerce.css', $storefront_version );
+	wp_style_add_data( 'storefront-woocommerce-style', 'rtl', 'replace' );
+
+	wp_register_script( 'storefront-sticky-payment', get_template_directory_uri() . '/js/checkout.min.js', 'jquery', $storefront_version, true );
+
+	if ( is_checkout() ) {
+		wp_enqueue_script( 'storefront-sticky-payment' );
+	}
+}
+
+/**
+ * Star rating backwards compatibility script (WooCommerce <2.5).
+ * @since 1.6.0
+ */
+function storefront_star_rating_script() {
+	if ( wp_script_is( 'jquery', 'done' ) && is_product() ) {
+?>
+	<script type="text/javascript">
+		jQuery( function( $ ) {
+			$( 'body' ).on( 'click', '#respond p.stars a', function() {
+				var $container = $( this ).closest( '.stars' );
+				$container.addClass( 'selected' );
+			});
+		});
+	</script>
+<?php
+	}
 }
 
 /**
@@ -129,4 +155,3 @@ function storefront_products_per_page() {
 function is_woocommerce_extension_activated( $extension = 'WC_Bookings' ) {
 	return class_exists( $extension ) ? true : false;
 }
-
