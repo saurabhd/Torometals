@@ -1,2 +1,0 @@
-[05-Jun-2015 06:14:04 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/addwebin/public_html/subdomains/torometals/wp-content/themes/storefront/index.php on line 13
-[09-Jun-2015 09:50:24 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/addwebin/public_html/subdomains/torometals/wp-content/themes/storefront/index.php on line 13

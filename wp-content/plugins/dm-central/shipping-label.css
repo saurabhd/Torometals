@@ -1,7 +1,0 @@
-#sender		{  }
-#print		{ position:absolute; top:25px; right:25px; }
-#addressee	{ font-size:18pt; margin:120px 0 0 350px; }
-
-@media print {
-	#print		{ display:none; }
-}
